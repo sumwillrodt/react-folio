@@ -1,4 +1,6 @@
-import logo from './logo.svg';
+import React from 'react';
+import logo from './SW-Logo.svg';
+import Header from '../src/';
 import './App.css';
 
 function App() {
