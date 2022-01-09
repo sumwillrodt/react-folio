@@ -1,8 +1,8 @@
 import React from "react";
-import logo from './SW-Logo.svg';
+import logo from '../../../SW-Logo.svg';
 
 
-function header(props) {
+function Header(props) {
   const navTitles =  ["About", "Portfolio", "Resume", "Contact"];
   return (
     <div>
@@ -18,10 +18,9 @@ function header(props) {
             </li>
           })}
         </ul>
-
       </nav>
     </div>
   )
 }
 
-export default Headers;
+export default Header;
