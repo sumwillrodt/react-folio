@@ -1,22 +1,17 @@
-import React from 'react';
-import Header from '../src/assets/components/Header/Header';
+import React, { useState } from 'react';
+import Header from './assets/components/Header/Header';
+import About from './assets/components/Nav/About';
 
 function App() {
+  //const [currentPage, handlePageChange] = useState("Homepage");
+
   return (
-    <header>
+    <div>
       <Header></Header>
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
+      <main>
+        <About></About>
+      </main>
+    </div>
   );
 }
 
