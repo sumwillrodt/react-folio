@@ -8,45 +8,33 @@ import Footer from '../src/assets/components/Footer/Footer';
 
 function App() {
   
-  const [navTitles] = useState(["About", "Portfolio", "Resume", "Contact"]);
+  // const [navTitles] = useState(["About", "Portfolio", "Resume", "Contact"]);
 
-  const [currentPage, setCurrentPage] = useState(navTitles[0]);
-  const [contactSelected, setContactSelected] = useState(false);
+  const [currentPage, handlePageChange] = useState("Homepage");
 
-  // const renderPage = (currentPage) => {
-  //   switch (currentPage) {
-  //     case "About":
-  //       return <About />;
-  //     case "Portfolio":
-  //       return <Portfolio />;
-  //     case "Resume":
-  //       return <Resume />;
-  //     case "ContactForm":
-  //       return <ContactForm />;
-  //     default:
-  //       return <About />;
-  //   }
-  // };
+  const renderPage = (currentPage) => {
+    switch (currentPage) {
+      case "About":
+        return <About />;
+      case "Portfolio":
+        return <Portfolio />;
+      case "Resume":
+        return <Resume />;
+      case "ContactForm":
+        return <ContactForm />;
+      default:
+        return <About />;
+    }
+  };
 
   return (
     <div>
-      <Header
-        navTitles={navTitles}
-        setCurrentPage={setCurrentPage}
-        currentPage={currentPage}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Header>
       <main>
-        {!currentPage ? (
-          <>
-            <Portfolio></Portfolio>
-            <About currentPage={currentPage}></About>
-            <Resume></Resume>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
+      <Header>
+        currentPage={currentPage}
+        handlePageChange={handlePageChange}
+      </Header>
+      <div>{renderPage(currentPage)}</div>
         <Footer></Footer>
       </main>
     </div>
