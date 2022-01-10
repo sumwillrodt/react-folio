@@ -4,6 +4,7 @@ import About from './assets/components/Nav/About';
 import Portfolio from './assets/components/Nav/Portfolio';
 import Resume from './assets/components/Nav/Resume';
 import ContactForm from './assets/components/Nav/Contact';
+import Footer from '../src/assets/components/Footer/Footer';
 
 function App() {
   
@@ -46,6 +47,7 @@ function App() {
         ) : (
           <ContactForm></ContactForm>
         )}
+        <Footer></Footer>
       </main>
     </div>
   );

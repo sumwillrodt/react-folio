@@ -5,7 +5,7 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-function TitlebarImageList() {
+function Portfolio() {
   return (
     <ImageList sx={{ width: 500, height: 450 }}>
       {itemData.map((item) => (
@@ -82,4 +82,4 @@ const itemData = [
   }
 ];
 
-export default TitlebarImageList();
+export default Portfolio();
