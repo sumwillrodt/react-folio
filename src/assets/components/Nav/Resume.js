@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "../../documents/SWillrodt_Resume.pdf"
 
 const Resume = () => {
 
@@ -6,7 +7,7 @@ const Resume = () => {
     <section  className="resume-wrapper">
       <div>
         <h2 className="resume h3">Full-Stack Skill Summary</h2>
-        <p className="resume">View/download my complete <a href={resume}>resume PDF</a></p>
+        <p className="resume">View/download my complete <a href={resume}>resume (PDF)</a></p>
         <ul>
           <strong>Front-end Proficiencies</strong>
           <li>HTML</li>
