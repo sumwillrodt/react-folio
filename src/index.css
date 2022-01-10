@@ -7,10 +7,10 @@
   --darker: #111111;
 }
 
-**************HEADER**************
 header {
-  margin: 10pt;
+  padding: 2% 10%;
   background-color: var(--tertiary);
+  display: flex;
 }
 
 header a {
@@ -18,14 +18,10 @@ header a {
 }
 
 .logo {
-  max-width: 5%;
+  max-width: 120pt;
 }
 
-.nav-bar {
-  margin: 10pt;
-}
-
-.nav {
+nav {
   margin: 0;
 }
 
@@ -84,16 +80,18 @@ h5,
 h6 {
   font-family: "Modesto Open InlineFill", Arial, Helvetica, sans-serif;
   font-weight: 600;
-  margin: 20px 0;
+  margin: 0;
   line-height: 1.25;
 }
 
 h1 {
   font-size: 2.25rem;
+  margin: 20px 0;
 }
 
 h2 {
   font-size: 2rem;
+  margin: 0;
 }
 
 h3 {
@@ -106,6 +104,7 @@ h4 {
 
 h5 {
   font-size: 1.25rem;
+  color: var(--primary);
 }
 
 h6 {
@@ -215,6 +214,10 @@ textarea {
   justify-content: flex-end;
 }
 
+.center {
+  justify-content: center;
+}
+
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
@@ -223,6 +226,11 @@ textarea {
 .mx-2 {
   margin-right: var(--spacing-two);
   margin-left: var(--spacing-two);
+}
+
+.mx-5 {
+  margin-right: var(--spacing-five);
+  margin-left: var(--spacing-five);
 }
 
 .my-1 {
