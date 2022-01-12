@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/react-folio/static/css/main.7dd2e759.css",
+    "main.js": "/react-folio/static/js/main.06721e51.js",
+    "static/js/787.5e9f8302.chunk.js": "/react-folio/static/js/787.5e9f8302.chunk.js",
+    "static/media/heroImage.jpg": "/react-folio/static/media/heroImage.6ffeca86ce6ae87c391e.jpg",
+    "static/media/SWillrodt_Resume.pdf": "/react-folio/static/media/SWillrodt_Resume.ca3fc6a6ebfebd44eda7.pdf",
+    "static/media/SW-Logo.svg": "/react-folio/static/media/SW-Logo.bb8dc741eda42cc091e42efa08e273da.svg",
+    "index.html": "/react-folio/index.html",
+    "main.7dd2e759.css.map": "/react-folio/static/css/main.7dd2e759.css.map",
+    "main.06721e51.js.map": "/react-folio/static/js/main.06721e51.js.map",
+    "787.5e9f8302.chunk.js.map": "/react-folio/static/js/787.5e9f8302.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7dd2e759.css",
+    "static/js/main.06721e51.js"
+  ]
+}
