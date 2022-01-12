@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './assets/components/Header/Header';
 import About from './assets/components/Nav/About';
 import Portfolio from './assets/components/Nav/Portfolio';
@@ -6,14 +6,20 @@ import Resume from './assets/components/Nav/Resume';
 import ContactForm from './assets/components/Nav/Contact';
 import Footer from '../src/assets/components/Footer/Footer';
 
-function App() {
+function App(props) {
   
-  // const [navTitles] = useState(["About", "Portfolio", "Resume", "Contact"]);
+  const sections =  [
+    { title: "About", url:"#" },
+    { title: "Portfolio", url:"#" },
+    { title: "Resume", url:"#" }
+  ];
 
-  const [currentPage, handlePageChange] = useState("Homepage");
+  // const sections =  [ "About", "Portfolio",  "Resume" ];
+
+  const { currentPage } = props;
 
   const renderPage = (currentPage) => {
-    switch (currentPage) {
+    switch(currentPage) {
       case "About":
         return <About />;
       case "Portfolio":
@@ -29,14 +35,9 @@ function App() {
 
   return (
     <div>
-      <main>
-      <Header>
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
-      </Header>
-      <div>{renderPage(currentPage)}</div>
-        <Footer></Footer>
-      </main>
+      <Header sections= {sections}/>
+      <main>{renderPage(currentPage)}</main>
+      <Footer></Footer>
     </div>
   );
 }
