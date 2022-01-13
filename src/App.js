@@ -11,9 +11,9 @@ import Footer from '../src/assets/components/Footer/Footer';
 function App() {
   
   const sections =  [
-    { title: "About", url:"#" },
-    { title: "Portfolio", url:"#" },
-    { title: "Resume", url:"#" }
+    { title: "About", url:"/about" },
+    { title: "Portfolio", url:"/portfolio" },
+    { title: "Resume", url:"/resume" }
   ];
 
   // const sections =  [ "About", "Portfolio",  "Resume" ];

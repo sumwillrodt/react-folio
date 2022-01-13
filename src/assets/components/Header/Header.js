@@ -6,14 +6,14 @@ function Header(props) {
   const { sections } = props;
   return (
     <header className="">
-      <div id="logo-area" className="center">  
+      <div id="logo-area">  
         <a href="/About"><img src={logo} className="logo" alt="logo"/></a>
-       <h5 className="">Sumner Willrodt</h5>
+        <h5 sx={{px: 2, flexShrink: 0}}>Sumner Willrodt</h5>
       </div>
       <nav> 
-        <Toolbar component="nav" variant="dense" sx={{ justifyContent: 'space-between', overflowX: 'auto' }}>
+        <Toolbar component="nav" variant="dense">
           {sections.map((section) => (
-            <Link color="inherit" noWrap key={section.title} variant="body2" href={section.url} sx={{ p: 1, flexShrink: 0 }} >
+            <Link color="inherit" key={section.title} variant="inherit" underline="none" href={section.url} sx={{ px: 3, flexShrink: 0 }} >
               {section.title}
             </Link>
           ))}
