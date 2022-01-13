@@ -1,41 +1,11 @@
-import * as React from 'react';
+import React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-function TitlebarImageList() {
-  return (
-    <ImageList sx={{ width: 500, height: 450 }}>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            src={`${item.img}?w=248&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-            href={`${item.url}`}
-            alt={item.title}
-            loading="lazy"
-          />
-          <ImageListItemBar
-            title={item.title}
-            actionIcon={
-              <IconButton
-                sx={{ color: 'rgba(255, 255, 255, 0.5)' }}
-                aria-label={`deployed application of ${item.title}`}
-                href={`${item.github}`}
-              >
-                <GitHubIcon />
-              </IconButton>
-            }
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
-  );
-}
-
-const itemData = [
+const projects = [
   {
     img: '../images/WeatherDash_SW.png',
     title: 'Weather Dashboard',
@@ -82,4 +52,34 @@ const itemData = [
   }
 ];
 
-export default TitlebarImageList();
+function Portfolio() {
+  return (
+    <ImageList sx={{ width: 500, height: 450 }}>
+      {projects.map((project) => (
+        <ImageListItem key={project.img}>
+          <img
+            src={`${project.img}?w=248&fit=crop&auto=format`}
+            srcSet={`${project.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+            href={`${project.url}`}
+            alt={project.title}
+            loading="lazy"
+          />
+          <ImageListItemBar
+            title={project.title}
+            actionIcon={
+              <IconButton
+                sx={{ color: 'rgba(255, 255, 255, 0.5)' }}
+                aria-label={`deployed application of ${project.title}`}
+                href={`${project.github}`}
+              >
+                <GitHubIcon />
+              </IconButton>
+            }
+          />
+        </ImageListItem>
+      ))}
+    </ImageList>
+  );
+};
+
+export default Portfolio();
