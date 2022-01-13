@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --primary: #899878ff;
   --secondary: #222725ff;
@@ -48,10 +52,6 @@ main {
 	margin: 0 auto;
 	max-width: 90%;
   padding: 50px 30px;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 html,

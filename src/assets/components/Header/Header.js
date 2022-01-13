@@ -5,7 +5,7 @@ import logo from "../../../SW-Logo.svg";
 function Header(props) {
   const { sections } = props;
   return (
-    <header>
+    <header className="">
       <div id="logo-area" className="center">  
         <a href="/About"><img src={logo} className="logo" alt="logo"/></a>
        <h5 className="">Sumner Willrodt</h5>
