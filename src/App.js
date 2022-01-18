@@ -11,16 +11,17 @@ import Footer from '../src/assets/components/Footer/Footer';
 function App() {
   
   const sections =  [
-    { title: "About", url:"/about" },
-    { title: "Portfolio", url:"/portfolio" },
-    { title: "Resume", url:"/resume" }
+    { title: "About", url: About },
+    { title: "Portfolio", url: Portfolio },
+    { title: "Resume", url: Resume }
   ];
 
   // const sections =  [ "About", "Portfolio",  "Resume" ];
 
-  const [ currentPage, changedPage ] = useState("Homepage");
+  const [ currentPage, setCurrentPage ] = useState("About"); 
 
   const renderPage = (currentPage) => {
+    console.log(currentPage);
     switch(currentPage) {
       case "About":
         return <About />;
@@ -40,7 +41,7 @@ function App() {
       <Header 
         sections={sections}
         currentPage={currentPage}
-        changedPage={changedPage} 
+        setCurrentPage={setCurrentPage} 
         />
       <main>{renderPage(currentPage)}</main>
       <Footer/>
