@@ -57,11 +57,6 @@ header a:active {
   text-decoration: underline;
 }
 
-/* header a:hover {
-  color: var(--secondary);
-  text-decoration: underline;
-} */
-
 #nav-section {
   color: var(--light);
   text-decoration: none;
@@ -138,6 +133,14 @@ body {
   color: var(--dark);
 }
 
+footer {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 h1,
 h2,
 h3,
@@ -201,7 +204,8 @@ img {
 ImageListItemBar {
   color: var(--quartiary);
 }
-/* span[role="img"] {
+
+span[role="img"] {
   cursor: default;
 }
 
