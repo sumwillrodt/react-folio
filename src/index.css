@@ -192,15 +192,15 @@ img {
 }
 
 #gallery {
-  width: 800px;
-  height: 600px;
-  gap: 40px;
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
 }
 
+ImageListItemBar {
+  color: var(--quartiary);
+}
 /* span[role="img"] {
   cursor: default;
 }

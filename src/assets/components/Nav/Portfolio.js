@@ -36,29 +36,28 @@ const projects = [
     title: 'Password Generator',
     url: 'https://sumwillrodt.github.io/password-generator/',
     github: 'https://github.com/sumwillrodt/password-generator.git',
-    // cols: 2,
+    cols: 2,
   },
   {
     img: '../images/heroImage.png',
-    title: 'Title',
-    url: '',
+    title: 'Minigram',
+    url: 'https://github.com/FatherDkay/minigram2',
     github: '',
-    // cols: 2,
+    cols: 2,
   },
   {
     img: '../images/heroImage.png',
-    title: 'Title',
+    title: 'Project 3',
     url: '',
     github: '',
-    // rows: 2,
-    // cols: 2,
-    featured: true,
+    rows: 2,
+    cols: 2,
   }
 ];
 
 function Portfolio() {
   return (
-    <ImageList id='gallery' sx={{ width: 800, height: 600, display: 'flex-box' }} col={2} rowHeight={264}>
+    <ImageList id='gallery' sx={{ width: 800, height: 600, display: 'flex-box' }} col={2} rowHeight={264} gap={40}>
       {projects.map((project) => (
         <ImageListItem key={project.img}>
           <img
@@ -68,7 +67,7 @@ function Portfolio() {
             alt={project.title}
             loading="lazy"
           />
-          <ImageListItemBar
+          <ImageListItemBar className='mx-5'
             title={project.title}
             actionIcon={
               <IconButton
